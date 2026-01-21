@@ -1,0 +1,135 @@
+.header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background: var(--bg-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    padding: 0.5rem 1rem;
+    width: 400px;
+    transition: all 0.2s ease;
+}
+
+.search-bar:focus-within {
+    border-color: var(--brand-primary);
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.search-icon {
+    color: var(--text-muted);
+    margin-right: 0.75rem;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-family: var(--font-family);
+    font-size: 0.875rem;
+    width: 100%;
+}
+
+.search-input::placeholder {
+    color: var(--text-muted);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.action-btn {
+    position: relative;
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+}
+
+.notification-badge {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-danger);
+    border-radius: 50%;
+    border: 2px solid var(--bg-primary);
+}
+
+.divider {
+    width: 1px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-md);
+    transition: background 0.2s ease;
+}
+
+.user-profile:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    background: linear-gradient(135deg, #a855f7, #6366f1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.75rem;
+    color: white;
+    box-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.user-role {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}

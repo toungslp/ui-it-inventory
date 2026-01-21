@@ -1,0 +1,124 @@
+.inventory-card {
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.table-header {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.table-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.table-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: var(--font-family);
+}
+
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--text-primary);
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.inventory-table th {
+    padding: 1rem 1.5rem;
+    background: rgba(255, 255, 255, 0.02);
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.inventory-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+    vertical-align: middle;
+}
+
+.inventory-table tr:hover {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.status-available {
+    background: rgba(16, 185, 129, 0.15);
+    color: #34d399;
+}
+
+.status-in-use {
+    background: rgba(99, 102, 241, 0.15);
+    color: #818cf8;
+}
+
+.status-broken {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+}
+
+.action-icon-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    transition: color 0.2s;
+    display: flex;
+}
+
+.action-icon-btn:hover {
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+}

@@ -1,0 +1,30 @@
+.bg-blue-500 {
+    background-color: #3b82f6;
+}
+
+.bg-purple-500 {
+    background-color: #a855f7;
+}
+
+.bg-green-500 {
+    background-color: #22c55e;
+}
+
+.bg-orange-500 {
+    background-color: #f97316;
+}
+
+.text-brand {
+    color: var(--brand-primary);
+}
+
+.grid-cols-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 1024px) {
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+}
